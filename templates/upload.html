@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>照片上传</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=0.5, minimum-scale=0.5, maximum-scale=1.0, user-scalable=yes " />
+</head>
+
+<body>
+    <br><br><br>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <br><br>
+        <input type="file" multiple="multiple" name="file" ACCEPT="image/*" class="button1 " />
+
+
+
+        <br><br><br>
+        <select id="Sel" class="select" name="options">
+            <option value=0>人员姓名</option>
+            <option value="徐芳芳">徐芳芳</option>
+            <option value="慧鑫">慧鑫</option>
+            <option value="李丙权">李丙权</option>
+            <option value="马瑞林">马瑞林</option>
+        </select>
+
+        <br><br><br><br>
+        <select id="Sel" class="select" name="mtype">
+            <option value=0>产品类型</option>
+            <option value="A">a</option>
+            <option value="B">b</option>
+            <option value="C">c</option>
+            <option value="D">d</option>
+        </select>
+
+        <br><br><br><br><br><br>
+        <p style="font-size:60px;color:white; margin-top:15px">请输入仪器编号:</p>
+        <label>
+            <input type="text" class="txt_input" name="name" value="仪器编号:仅需输入后几位即可"
+                onFocus="if (this.value==this.defaultValue) this.value='';"
+                onBlur="if (this.value=='') this.value=this.defaultValue;" style="margin-top:10px;" />
+        </label>
+        <input type="submit" value="上传" class="button" style="margin-top:15px;" />
+    </form>
+</body>
+
+<style type="text/css">
+    body {
+        < !--font-size: 50px;
+        line-height: 30px;
+        -->text-align: center;
+
+            {
+            #background-image: url("https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp1.itc.cn%2Fq_70%2Fimages03%2F20210302%2F9065008105ab44a89e9c86e99b34ffc1.jpeg&refer=http%3A%2F%2Fp1.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1640060339&t=652baa6ace10f6c485e8acfd6878585b");
+            #
+        }
+
+        background-image:url('../static/pg/new.jpg');
+        background-repeat: repeat;
+    }
+
+    .button {
+        background-color: #4CAF50;
+        /* Green */
+        margin-top: 20px;
+        border: none;
+        color: white;
+        padding: 30px 50px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .button1 {
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 55px;
+    }
+
+    .select {
+        color: black;
+        font-size: 50px;
+        width: 600px;
+    }
+
+    .txt_input {
+        margin-top: 20px;
+        color: black;
+        padding: 20px 30px;
+        text-align: center;
+        font-size: 40px;
+    }
+</style>
+
+</html>
